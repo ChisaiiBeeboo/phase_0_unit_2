@@ -26,7 +26,13 @@
 
 # 2. Initial Solution
 
+def total(arr)
+    arr.inject(:+)
+end
 
+def sentence_maker(arr)
+    (arr.join(' ') << '.').capitalize
+end
 
 
 # 3. Refactored Solution
