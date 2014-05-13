@@ -37,6 +37,7 @@ end
 
 # 3. Refactored Solution
 
-
+NA
 
 # 4. Reflection
+####This is my first time using xcode and rspec to test code. The video included in the instructions made setting up/startup fast and painless. I'm still using Sublime text2 to do actual coding though, I like the convenience ctrl-b command. With the sentence_maker method I had the necessary functions to get the method to work, it was just a matter of what order to implement them. My methods are short one liners, not sure they can be refactored. Challenge was short and simple coding, I'm excited we're finally ruby'n.I'm having trouble with commenting out multi-lines in xcode, google is saying cmd-/, but that's just not happening.####
