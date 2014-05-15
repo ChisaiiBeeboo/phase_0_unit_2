@@ -15,7 +15,9 @@
 
 # 2. Initial Solution
 
-
+def Array#pad(arr, x=nil)
+arr.length
+end
 
 
 # 3. Refactored Solution

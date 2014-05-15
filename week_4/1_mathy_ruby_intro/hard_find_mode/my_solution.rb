@@ -15,7 +15,9 @@
 
 # 2. Initial Solution
 
-
+def mode(array)
+    array.group_by { |el| array.count(el) }.max.last.uniq
+end
 
 
 # 3. Refactored Solution

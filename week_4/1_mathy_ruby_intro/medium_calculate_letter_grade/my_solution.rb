@@ -15,7 +15,17 @@
 
 # 2. Initial Solution
 
-
+def get_grade(arr)
+	avg = arr.inject(:+)/arr.length
+    
+	case avg
+        when (90..100) then "A"
+        when (80..89) then "B"
+        when (70..79) then  "C"
+        when (60..69) then "D"
+        else "F"
+	end
+end
 
 
 # 3. Refactored Solution

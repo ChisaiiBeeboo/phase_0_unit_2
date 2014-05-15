@@ -14,8 +14,9 @@
 
 # 2. Initial Solution
 
-
-
+def separate_comma(int)
+int.to_s.reverse.scan(/.{3}|.+/).join(",").reverse
+end
 
 # 3. Refactored Solution
 
