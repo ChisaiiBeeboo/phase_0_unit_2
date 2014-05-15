@@ -27,8 +27,9 @@ int.to_s.reverse.scan(/.{3}|.+/).join(",").reverse
 end
 
 # 3. Refactored Solution
-
+na
 
 
 # 4. Reflection
 
+#### The trickiest part of the challenge was the initial reverse method. I started out successfully adding a comma every 3 spaces, but because of the format my method would output '100,000,0'. After some thinking outside of the box I was able to reach the final solution by calling reverse once at the beginning and once more at the end. I discovered the scan method here http://stackoverflow.com/questions/3184150/ruby-string-how-to-insert-tag-every-5-characters. Can't seem to make the method any leaner than it already is.
