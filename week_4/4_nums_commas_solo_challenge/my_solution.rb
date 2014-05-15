@@ -11,6 +11,14 @@
 # What is the output? (i.e. What should the code return?)
 # What are the steps needed to solve the problem?
 
+# seperate_comma should take a non-negative integer input
+# should output the integer separated by comma's
+# Change integer into string,
+# Call reverse method on that string
+# Scan the string to group every 3 characters into an array
+# Use the join method to join the groups by a comma creating a string
+# Then reverse the string to get the final output.
+
 
 # 2. Initial Solution
 
@@ -22,4 +30,5 @@ end
 
 
 
-# 4. Reflection 
+# 4. Reflection
+
