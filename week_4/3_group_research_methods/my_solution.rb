@@ -20,11 +20,19 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-  # Your code here!
+  source.map do |thing|
+     if thing.is_a? Integer 
+      thing + thing_to_modify 
+     else
+       thing
+     end
+  end
 end
 
 def my_hash_modification_method(source, thing_to_modify)
-  # Your code here!
+    source.each do |key,value| 
+    source[key] += thing_to_modify
+  end
 end
 
 # Identify and describe the ruby method you implemented. 
