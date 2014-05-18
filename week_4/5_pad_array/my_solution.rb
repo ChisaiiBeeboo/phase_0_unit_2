@@ -28,27 +28,25 @@
 #Output- an array with the minimum length set to min_size with the optional padded value
 
 # input should take an array, with 2 parameters
-# should output array with opt padded values
+# should output
 
 
 # 2. Initial Solution
 
-class Array
-    def pad(min_num, pad_value=nil)
-        new_array = Array.new(self)
-        if new_array.length >= min_num
-            new_array
-        else 
-            (min_num - new_array.length).times do
-             new_array << pad_value 
-        end 
-     end
-     new_array     
+ class Array
+ 	def pad(min_num, pad_value=nil)
+ 		new_array = Array.new(self)
+ 		return new_array if new_array.length >= min_num
+ 		else 
+ 			(min_num - new_array.length).times do
+            new_array << pad_value
+		end 
+	 end
+	 new_array     
     end
-    def pad!(min_num, pad_value=nil)
-        if self.length >= min_num
-            self
-        else 
+	def pad!(min_num, pad_value=nil)
+		return self if self.length >= min_num
+		else 
             (min_num - self.length).times do
              self << pad_value
         end       
@@ -59,23 +57,10 @@ end
 
 # 3. Refactored Solution
 
-class Array
-  def pad!(min_size, pad_value = nil)
-    (min_size - self.length).times do self << pad_value 
-    end
-    
-    self
-  end
-  
-  def pad(min_size, pad_value = nil)
-  self.dup.pad!(min_size, pad_value)
-  end
-end
 
 # 4. Reflection
-# Wow this was an especially frustrating challenge because I had solved this pad_an_array once before when the original Socrates excercises
-#  were assigned. I solved it again earlier in the week while looking over the challenges, which took me no more than 30 mins. I must have saved 
-#  the wrong solution by accident because there were minor syntax errors and the code no longer worked(don't ask me why). To add insult to injury 
-#  I couldn't work myself back to the solution during our pairing session that lasted almost 2 hrs. I asked my partners for a break and had lunch 
-#  with the intention to come back with fresh eyes. I started all over and came up with my refactored one-liner. Morgan introduced me to the dup
-#  method that we used to copy the pad! method.
+### Wow this was an especially frustrating challenge because I had solved this pad_an_array once before when the original Socrates excercises
+# were assigned. I solved it again earlier in the week while looking over the challenges. I must have saved the wrong solution by accident
+# because there were minor syntax errors and the code no longer worked(don't ask me why). Add insult to injury, I couldn't work myself back 
+# to the solution during our pairing session that lasted almost 2 hrs. I requested a break in hopes of being able to come back to the problem 
+# with fresh eyes. 
