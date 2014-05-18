@@ -20,14 +20,17 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-  source.map do |thing|
+  final = []
+  source.each do |thing|
      if thing.is_a? Integer 
-      thing + thing_to_modify 
+     final << thing + thing_to_modify 
      else
-       thing
+      final << thing
      end
   end
+  final
 end
+
 
 def my_hash_modification_method(source, thing_to_modify)
     source.each do |key,value| 

@@ -98,32 +98,9 @@
 def north_korean_cipher(coded_message)
   arrOfCodedSentence = coded_message.downcase.split('')
   arrOfDecodedSentence = []
-  cipher = {"e" => "a",   
-            "f" => "b",   
-            "g" => "c", 
-            "h" => "d", 
-            "i" => "e", 
-            "j" => "f",
-            "k" => "g",
-            "l" => "h",
-            "m" => "i",
-            "n" => "j",
-            "o" => "k",
-            "p" => "l",
-            "q" => "m",
-            "r" => "n",
-            "s" => "o",
-            "t" => "p",
-            "u" => "q",
-            "v" => "r",
-            "w" => "s",
-            "x" => "t",
-            "y" => "u",
-            "z" => "v",
-            "a" => "w",
-            "b" => "x",
-            "c" => "y",
-            "d" => "z"}
+   keys = ('a'..'z').to_a
+ values = keys.rotate(-4)
+ cipher = Hash[keys.zip(values)]
 
   arrOfCodedSentence.each do |coded|
     found_match = false
@@ -131,7 +108,6 @@ def north_korean_cipher(coded_message)
       if coded == decoded
         arrOfDecodedSentence << cipher[decoded]
         found_match = true
-        break 
       elsif coded.match(/[@|#|$|%|^|&|*]/)
         arrOfDecodedSentence << " "
         found_match = true
@@ -139,7 +115,6 @@ def north_korean_cipher(coded_message)
       elsif (0..9).to_a.include?(coded)
         arrOfDecodedSentence << coded
         found_match = true
-        break
       end
     end
     if not found_match
@@ -152,7 +127,6 @@ def north_korean_cipher(coded_message)
       decoded_sentence.gsub!(/\d+/) { |num| num.to_i / 100 }
     end
   decoded_sentence
-
 end
 
 
@@ -181,3 +155,4 @@ p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw
 # p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw?")
 
 # Reflection
+
