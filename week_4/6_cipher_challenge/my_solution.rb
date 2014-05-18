@@ -156,5 +156,10 @@ p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw
 
 # Reflection
 
-
+# I saved this challenge for last due to it's complexity, I wanted extra time to research Ruby methods and do my best to refactor. I definitely
+# feel my current code can be further refactored, I'm choosing to move on because I've spent too much time on this challenge and it's time to move 
+# on. Thoroughly enjoyed working on the challenge. The rotate and zip methods I found on Ruby Docs were a godsend. I also discovered the Hash[] 
+# method of creating the hash to tie everything together. I stuck with the Hash structure because they're typically faster for lookups.
+# I used the .match regular expressions to refactor the symbols portion of the code. I toyed with the idea of turning the if statement into a 
+# Ruby case, but I read somewhere that one should avoid using case when possible. 
 
