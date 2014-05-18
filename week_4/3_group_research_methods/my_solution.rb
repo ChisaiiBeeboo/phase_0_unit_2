@@ -19,7 +19,15 @@ end
 #
 
 # Person 2
+
+
+
 def my_array_modification_method(source, thing_to_modify)
+
+I chose the Ruby each method because it works with both arrays and hashes. It iterates through each element in the i_want_pets array to
+isolate the Integer and add the 'thing_to_modify' parameter. For the my_hash_modification_method I iterated through each key-value pair
+to add the 'thing_to_modify' to every value. 
+
   final = []
   source.each do |thing|
      if thing.is_a? Integer 
@@ -89,7 +97,8 @@ p my_array_deletion_method(i_want_pets, "a") == ["I", 4, "pets", "but", "I", "on
 p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# 
+# Each is a method I use extensively because of it's versatility, not to mention it's one of the first methods they teach in the Codecademy Ruby Tutorial.
+# It's a simple method to use when I need to perform a block on each element in a data structure. I feel pretty confident with my ability to use the method.
 # 
 # 
 # 
