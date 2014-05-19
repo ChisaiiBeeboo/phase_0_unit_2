@@ -11,7 +11,7 @@
 # Initialize should take one argument and retrun an argument error if array is empty
 # Initialize has instance variable sides set to length of array and instance of labels
 # Sides method should return instance of sides
-# Roll should return random element from array
+# Roll should return random element from instance of labels
 
 
 # 3. Initial Solution
@@ -56,4 +56,6 @@ end
 #I used 'if' instead of 'unless' for the raise ArgumentError in the case
 #the user tries to pass it an empty array method. Also used Ruby's sample
 #method to return a random element from the array. I learned that initialize
-#can have
+#can have have instance variable's that aren't also arguments. Attribute reader
+# :sides would accomplish the same thing as sides method. Feeling confident with
+# classes right now.
