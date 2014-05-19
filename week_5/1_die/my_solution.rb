@@ -5,9 +5,12 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
-# Steps:
+# Input: Should take an integer as input
+# Output: Should output a random integer less sides
+# Steps: Define a class called Die. Die should have 3 methods
+# Initialize method should take an integer argument sides, instance of sides should be assigned to sides, initialize should throw an ArgumentError should the argument be less than 0
+# Sides method should return instance of side
+# Roll method should return an integer between 1 and sides
 
 
 # 3. Initial Solution
@@ -46,7 +49,9 @@ p die = Die.new(0) # Should throw ArgumentError 'Wrong number'
 
 
 # 5. Reflection 
-
+#Challenge was simple, learned about raise method and ArgumentError's. I'm a little
+#confused as to when to refer to the instance of an argument while defining methods. User
+#rand method to return a random number.
 
 
 

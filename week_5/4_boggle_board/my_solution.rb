@@ -30,7 +30,16 @@ boggle_board = [["b", "r", "a", "e"],
 # Pseudocode
 
 # Initial Solution
-
+def get_row(row)
+   case row
+   when 0 then boggle_board[0]
+   when 1 then boggle_board[1]
+   when 2 then boggle_board[2]
+   when 3 then boggle_board[3]
+   else
+   	nil
+   end
+end
 
 # Refactored Solution
 
@@ -49,7 +58,16 @@ boggle_board = [["b", "r", "a", "e"],
 # Pseudocode
 
 # Initial Solution
-
+def get_col(col)
+    case col
+    when 0 then boggle_board.map {|row| row[0]}
+    when 1 then boggle_board.map {|row| row[1]}
+    when 2 then boggle_board.map {|row| row[2]}
+    when 3 then boggle_board.map {|row| row[3]}
+    else
+    	nil
+    end 
+end
 
 # Refactored Solution
 
