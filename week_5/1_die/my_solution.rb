@@ -46,3 +46,10 @@ p die = Die.new(0) # Should throw ArgumentError 'Wrong number'
 
 
 # 5. Reflection 
+
+
+
+
+
+
+
