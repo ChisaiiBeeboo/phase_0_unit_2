@@ -37,7 +37,7 @@ class CreditCard
 				num.to_i 
 			end
 		end
-		@arrOfInt
+		arrOfInt
 	end
 
 	def sum(arrI)
@@ -50,18 +50,27 @@ class CreditCard
 	end
 end
 
+
 # 4. Refactored Solution
-
-
-
-
-
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+# card = CreditCard.new(4563960122001999)
+# p card.check_card # => true
 
+# card = CreditCard.new(4408041234567892)
+# p card.check_card # => false
 
-
-
+# card = CreditCard.new(44080412345678)
+# p card.check_card # => should throw error
 
 # 5. Reflection 
+# This was one of the more challenging excercises thus far, I ended up pairing, going to office hour and a tutoring session to debug.
+# I succeeded in manipulating data structures, iterating through arrays to change integers into strings, breaking up strings and turning them back 
+# into integers. I was successful in creating 3 methods that accomplished each of the 3 steps listed in the instruction. I hit a wall when trying to 
+# wrap those 3 methods into a method. The final method check_card didn't understand what @total is because it wasn't instantiate in initialize. I 
+# ended up throwing @total in the initliaze method and assigning it to sum(doubled). I'm still trying to grasp the logic behind initialize. I was 
+# under the impression programs run line by line from top to bottom, so how does initialize know what the method sum is if it's buried 2/3's of the 
+# way within the class? I plan on sleeping on it, the answers to these types of questions seem to work themselves out by the time I wake up. 
+
+
