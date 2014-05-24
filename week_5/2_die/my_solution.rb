@@ -42,10 +42,10 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-#die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
-#p die.sides # still returns the number of sides, in this case 6
-#p die.roll # returns one of ['A', 'B', 'C', 'D', 'E', 'F'], randomly
-#p die = Die.new([]) # should throw "No Empty Arrays" ArgumentError
+die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+p die.sides # still returns the number of sides, in this case 6
+p die.roll # returns one of ['A', 'B', 'C', 'D', 'E', 'F'], randomly
+p die = Die.new([]) # should throw "No Empty Arrays" ArgumentError
 
 
 

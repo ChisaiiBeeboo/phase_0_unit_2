@@ -1,6 +1,8 @@
 #population density is number of people per square mile as of 2012
 #this data is updated every year with estimates from a 10 year census 
 
+# STATE_DATA uses the implicit form for it's hash. State_Data keys' are set to state names and it's value is assigned to another hash that is using
+# Ruby symbols to assign key to value. 
 
 STATE_DATA = {  "Alabama" => {population_density: 94.65, population: 4822023, region: 5, regional_spread: 3},
                 "Alaska" => {population_density: 1.1111, population: 731449, region: 10, regional_spread: 9},

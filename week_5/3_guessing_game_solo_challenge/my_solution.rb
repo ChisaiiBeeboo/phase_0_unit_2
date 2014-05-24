@@ -44,16 +44,16 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-# game = GuessingGame.new(8)
+game = GuessingGame.new(8)
 
-# game.solved?   # => false
+game.solved?   # => false
 
-# game.guess(5)  # => :low
-# game.guess(20) # => :high
-# game.solved?   # => false
+game.guess(5)  # => :low
+game.guess(20) # => :high
+game.solved?   # => false
 
-# game.guess(10) # => :correct
-# game.solved?   # => true
+game.guess(10) # => :correct
+game.solved?   # => true
 
 # 5. Reflection 
 # I used if/elsif statement to build out guess. I'm getting a little 
